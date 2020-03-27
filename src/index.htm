@@ -9,7 +9,18 @@
 <body>
   <h1>DrRecords</h1>
   <h2>List Of Records</h2>  
+  <p>
+    Search By: <select type="text" id="searchOptions">
+      <option value="Title">Title</option>
+      <option value="Artist">Artist</option>
+      <option value="Year">Year</option>
+    </select>
+    Search Parameter <input type="text" id="searchText"></input>
+    <button id="searchButton">Search</button>
+    <button id="reset">Reset</button>
+  </p>
   <div id="content"></div>
+
   <h2>Add New Record</h2>  
   <div id="content2">
     <p>title <input type="text" id="title"></p>
@@ -17,7 +28,27 @@
     <p>duration <input type="number" id="duration"></p>
     <p>yearOfPublication <input type="number" id="publication"></p>
     <button id="add">ADD</button>
+    <p>Status Code: <span id="statusCode"></span></p>
   </div>
+
+  <h2>Remove a Record</h2>
+  <div>
+    <p>enter the id of the record you want to remove</p>
+    <p>id: <input type="number" id="deleteId"> <button id="deleteButton">Delete</button></p>
+    <p>Status Code: <span id="statusCodeDelete"></span></p>
+  </div>
+  
+  <h2>Edit record by Id</h2>
+  <div>
+  <p>id <input type="number" id="putId"></p>
+  <p>title <input type="text" id="putTitle"></p>
+  <p>artist<input type="text" id="putArtist"></p>
+  <p>duration <input type="number" id="putDuration"></p>
+  <p>yearOfPublication <input type="number" id="putPublication"></p>
+  <button id="putButton">Edit</button>
+  <p>Status Code: <span id="statusCodePut"></span></p>
+  </div>
+
     
 
 
